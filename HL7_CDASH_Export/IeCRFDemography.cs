@@ -15,8 +15,8 @@ namespace HL7_CDASH_Export
     public interface IeCRFDemography
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "GeteCRFDemography")]
-        DM GeteCRFDemography();
+        [WebInvoke(Method = "GET", UriTemplate = "GeteCRFDemography/{Id}")]
+        DM GeteCRFDemography(string Id);
 
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "PosteCRFDemography")]

@@ -10,6 +10,9 @@ namespace HL7_CDASH_Export.Domain.CM
     public class CM
     {
         [DataMember]
+        public string SUBJECTID { get; set; }
+
+        [DataMember]
         public string CMYN { get; set; }
 
         [DataMember]

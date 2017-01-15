@@ -7,7 +7,8 @@ namespace HL7_CDASH_Web.Models
 {
     public class VitalSignsViewModels
     {
-        
+        public string SUBJECTID { get; set; }
+
         public string VSPERF { get; set; }
 
         

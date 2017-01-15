@@ -52,6 +52,9 @@ namespace HL7_CDASH_Web.Models
             new SelectListItem() {Text = "Specify Other", Value = "RACEOTH"}
         };
 
+        [Display(Name="SubjectID")]
+        public string SUBJECTID { get; set; }
+
         [Display(Name = "Birth Date")]
         public string BRTHDAT { get; set; }
 

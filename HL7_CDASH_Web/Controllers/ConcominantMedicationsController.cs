@@ -13,7 +13,7 @@ using System.Text;
 
 namespace HL7_CDASH_Web.Controllers
 {
-    public class ConcominantMedicationsController : Controller
+    public class ConcomitantMedicationsController : Controller
     {
         public ActionResult Index()
         {
@@ -21,7 +21,7 @@ namespace HL7_CDASH_Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult PostConcominantMedications(ConcominantMedicationsViewModels cmV)
+        public ActionResult PostConcomitantMedications(ConcomitantMedicationsViewModels cmV)
         {
             try
             {

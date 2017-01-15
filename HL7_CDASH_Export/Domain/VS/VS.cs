@@ -12,6 +12,9 @@ namespace HL7_CDASH_Export.Domain.VS
     public class VS
     {
         [DataMember]
+        public string SUBJECTID { get; set; }
+
+        [DataMember]
         public string VSPERF { get; set; }
 
         [DataMember]

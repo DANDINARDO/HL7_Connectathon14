@@ -1,11 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "ConcominantMedications";
+    ViewBag.Title = "Concomitant Medications";
 }
 
-@model HL7_CDASH_Web.Models.ConcominantMedicationsViewModels
+@model HL7_CDASH_Web.Models.ConcomitantMedicationsViewModels
 
-@using (Html.BeginForm("PostConcominantMedications", "ConcominantMedications", FormMethod.Post))
+@using (Html.BeginForm("PostConcomitantMedications", "ConcomitantMedications", FormMethod.Post))
 {
     <div class="panel panel-primary" style="margin-top:5em;">
         <div class="panel panel-heading">
@@ -19,6 +19,7 @@
             </div>   
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
+                        @Html.LabelFor(x => x.SUBJECTID)&nbsp;@Html.TextBoxFor(x => x.SUBJECTID, new { @class = "form-control" })
                         @Html.LabelFor(x => x.CMYN)&nbsp;@Html.TextBoxFor(x => x.CMYN, new {@class = "form-control"})
                         @Html.LabelFor(x => x.CMSPID)&nbsp;@Html.TextBoxFor(x => x.CMSPID, new {@class = "form-control"})
                         @Html.LabelFor(x => x.CMTRT)&nbsp;@Html.TextBoxFor(x => x.CMTRT, new {@class = "form-control"})

@@ -12,6 +12,9 @@ namespace HL7_CDASH_Export.Domain.DM
     public class DM
     {
         [DataMember]
+        public string SUBJECTID { get; set; }
+
+        [DataMember]
         public string BRTHDAT { get; set; }
 
         [DataMember]

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace HL7_CDASH_Web.Models
 {
-    public class ConcominantMedicationsViewModels
+    public class ConcomitantMedicationsViewModels
     {
-        
+        public string SUBJECTID { get; set; }
+
         public string CMYN { get; set; }
 
         
