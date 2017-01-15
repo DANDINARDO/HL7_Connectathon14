@@ -37,7 +37,7 @@ namespace HL7_CDASH_Export.Domain.CM
         public string CMMHNO { get; set; }
 
         [DataMember]
-        public string CMDSTXT { get; set; }
+        public string CMDOSTXT { get; set; }
 
         [DataMember]
         public string CMDOSE { get; set; }
@@ -46,7 +46,7 @@ namespace HL7_CDASH_Export.Domain.CM
         public string CMDOSTOT { get; set; }
 
         [DataMember]
-        public string CMUDOSU { get; set; }
+        public string CMDOSU { get; set; }
 
         [DataMember]
         public string CMDOSFRM { get; set; }
