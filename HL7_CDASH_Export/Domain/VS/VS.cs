@@ -24,7 +24,7 @@ namespace HL7_CDASH_Export.Domain.VS
         public string VSDAT { get; set; }
 
         [DataMember]
-        public string VSTIN { get; set; }
+        public string VSTIM { get; set; }
 
         [DataMember]
         public string VSSPID { get; set; }
@@ -36,13 +36,22 @@ namespace HL7_CDASH_Export.Domain.VS
         public string VSORRESU { get; set; }
 
         [DataMember]
-        public string VSVLSIG { get; set; }
+        public string VSCLSIG { get; set; }
 
         [DataMember]
         public string VSLOC { get; set; }
 
         [DataMember]
         public string VSPOS { get; set; }
+
+        [DataMember]
+        public string VSTEST { get; set; }
+
+        [DataMember]
+        public string VSTESTCD { get; set; }
+
+        [DataMember]
+        public string VSTPT { get; set; }
 
     }
 }

@@ -19,15 +19,18 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    @Html.LabelFor(x => x.SUBJECTID)&nbsp;@Html.TextBoxFor(x => x.SUBJECTID, new { @class = "form-control" })
+                    @Html.LabelFor(x => x.SUBJECTID)&nbsp;@Html.TextBoxFor(x => x.SUBJECTID, new { @type="number", @class = "form-control" })
                     @Html.LabelFor(x => x.VSPERF)&nbsp;@Html.TextBoxFor(x => x.VSPERF, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSDTC)&nbsp;@Html.TextBoxFor(x => x.VSDTC, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSDAT)&nbsp;@Html.TextBoxFor(x => x.VSDAT, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSTIN)&nbsp;@Html.TextBoxFor(x => x.VSTIN, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSSPID)&nbsp;@Html.TextBoxFor(x => x.VSSPID, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSORRES)&nbsp;@Html.TextBoxFor(x => x.VSORRES, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSDTC)&nbsp;@Html.TextBoxFor(x => x.VSDTC, new {@type="datetime", @class = "form-control"})
+                    @Html.LabelFor(x => x.VSDAT)&nbsp;@Html.TextBoxFor(x => x.VSDAT, new {@type="date", @class = "form-control"})
+                    @Html.LabelFor(x => x.VSTIM)&nbsp;@Html.TextBoxFor(x => x.VSTIM, new {@type="time", @class = "form-control"})
+                    @Html.LabelFor(x => x.VSSPID)&nbsp;@Html.TextBoxFor(x => x.VSSPID, new {@type="number", @class = "form-control"})
+                    @Html.LabelFor(x => x.VSTPT)&nbsp;@Html.TextBoxFor(x => x.VSTPT, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.LabelFor(x => x.VSTEST)&nbsp;@Html.TextBoxFor(x => x.VSTEST, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.LabelFor(x => x.VSTESTCD)&nbsp;@Html.TextBoxFor(x => x.VSTESTCD, new { @class = "form-control" })
+                    @Html.LabelFor(x => x.VSORRES)&nbsp;@Html.TextBoxFor(x => x.VSORRES, new {@type="number", @class = "form-control"})
                     @Html.LabelFor(x => x.VSORRESU)&nbsp;@Html.TextBoxFor(x => x.VSORRESU, new {@class = "form-control"})
-                    @Html.LabelFor(x => x.VSVLSIG)&nbsp;@Html.TextBoxFor(x => x.VSVLSIG, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSCLSIG)&nbsp;@Html.TextBoxFor(x => x.VSCLSIG, new {@class = "form-control"})
                     @Html.LabelFor(x => x.VSLOC)&nbsp;@Html.TextBoxFor(x => x.VSLOC, new {@class = "form-control"})
                     @Html.LabelFor(x => x.VSPOS)&nbsp;@Html.TextBoxFor(x => x.VSPOS, new {@class = "form-control"})
                 </div>

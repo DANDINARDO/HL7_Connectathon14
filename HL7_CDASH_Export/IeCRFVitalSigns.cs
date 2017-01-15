@@ -15,8 +15,8 @@ namespace HL7_CDASH_Export
     public interface IeCRFVitalSigns
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "GeteCRFVitalSigns")]
-        VS GeteCRFVitalSigns();
+        [WebInvoke(Method = "GET", UriTemplate = "GeteCRFVitalSigns/{Id}")]
+        VS GeteCRFVitalSigns(string Id);
 
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "PosteCRFVitalSigns")]
