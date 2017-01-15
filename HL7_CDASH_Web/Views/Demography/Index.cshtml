@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Demography";
+}
+
+@using HL7_CDASH_Web.Models
+@model HL7_CDASH_Web.Models.DemographyViewModels
+
+@using (Html.BeginForm("PostDemography", "Demography", FormMethod.Post))
+{
+    <div class="panel panel-primary" style="margin-top:5em;">
+        <div class="panel panel-heading">
+            <h3>@ViewBag.Title</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="row">
+                <div class="col-md-offset-1">
+                    @Html.DisplayFor(x => x.Results)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    @Html.LabelFor(x => x.BRTHDAT)&nbsp;@Html.TextBoxFor(x => x.BRTHDAT, new {@type="date", @class = "form-control"})
+                    @Html.LabelFor(x => x.BRTHYR)&nbsp;@Html.TextBoxFor(x => x.BRTHYR, new {@type="number", @class = "form-control"})
+                    @Html.LabelFor(x => x.BRTHMO)&nbsp;@Html.DropDownListFor(x => x.BRTHMO, DemographyViewModels.GetMonth, "-- Select Birth Month --" , new {@class = "form-control"})
+                    @Html.LabelFor(x => x.BRTHDY)&nbsp;@Html.DropDownListFor(x => x.BRTHDY, Enumerable.Range(1, 31).Select(x => new SelectListItem() {Text = x.ToString(), Value = x.ToString()}), new {@class = "form-control"})
+                    @Html.LabelFor(x => x.BRTHTIM)&nbsp;@Html.TextBoxFor(x => x.BRTHTIM, new {@type="time", @class = "form-control"})
+                    @Html.LabelFor(x => x.AGE)&nbsp;@Html.TextBoxFor(x => x.AGE, new { @type = "number", @class="form-control" })
+                    @Html.LabelFor(x => x.AGEU)&nbsp;@Html.DropDownListFor(x => x.AGEU, DemographyViewModels.GetAgeUnits, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.DMDAT)&nbsp;@Html.TextBoxFor(x => x.DMDAT, new { @type = "date", @class = "form-control"})
+                    @Html.LabelFor(x => x.SEX)&nbsp;@Html.DropDownListFor(x => x.SEX, DemographyViewModels.GetSexOptions, "-- Select Gender --", new { @class = "form-control" })
+                    @Html.LabelFor(x => x.ETHNIC)&nbsp;@Html.DropDownListFor(x => x.ETHNIC, DemographyViewModels.GetEthnicity, "-- Select Ethnicity --", new {@class = "form-control"})
+                    @Html.LabelFor(x => x.RACEOTH)&nbsp;@Html.TextBoxFor(x => x.RACEOTH, new {@class = "form-control"})
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Submit Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+

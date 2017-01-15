@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "ConcominantMedications";
+}
+
+@model HL7_CDASH_Web.Models.ConcominantMedicationsViewModels
+
+@using (Html.BeginForm("PostConcominantMedications", "ConcominantMedications", FormMethod.Post))
+{
+    <div class="panel panel-primary" style="margin-top:5em;">
+        <div class="panel panel-heading">
+            <h3>@ViewBag.Title</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="row">
+                <div class="col-md-offset-1">
+                    @Html.DisplayFor(x => x.Results)
+                </div>
+            </div>   
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        @Html.LabelFor(x => x.CMYN)&nbsp;@Html.TextBoxFor(x => x.CMYN, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMSPID)&nbsp;@Html.TextBoxFor(x => x.CMSPID, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMTRT)&nbsp;@Html.TextBoxFor(x => x.CMTRT, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMOCCUR)&nbsp;@Html.TextBoxFor(x => x.CMOCCUR, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMINGRD)&nbsp;@Html.TextBoxFor(x => x.CMINGRD, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMINDC)&nbsp;@Html.TextBoxFor(x => x.CMINDC, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMAENO)&nbsp;@Html.TextBoxFor(x => x.CMAENO, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMMHNO)&nbsp;@Html.TextBoxFor(x => x.CMMHNO, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMDSTXT)&nbsp;@Html.TextBoxFor(x => x.CMDSTXT, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMDOSE)&nbsp;@Html.TextBoxFor(x => x.CMDOSE, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMDOSTOT)&nbsp;@Html.TextBoxFor(x => x.CMDOSTOT, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMUDOSU)&nbsp;@Html.TextBoxFor(x => x.CMUDOSU, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMDOSFRM)&nbsp;@Html.TextBoxFor(x => x.CMDOSFRM, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMROUTE)&nbsp;@Html.TextBoxFor(x => x.CMROUTE, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMSTDTC)&nbsp;@Html.TextBoxFor(x => x.CMSTDTC, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMSTDAT)&nbsp;@Html.TextBoxFor(x => x.CMSTDAT, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMSTTIM)&nbsp;@Html.TextBoxFor(x => x.CMSTTIM, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMPRIOR)&nbsp;@Html.TextBoxFor(x => x.CMPRIOR, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMENDTC)&nbsp;@Html.TextBoxFor(x => x.CMENDTC, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMENDAT)&nbsp;@Html.TextBoxFor(x => x.CMENDAT, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMENTIM)&nbsp;@Html.TextBoxFor(x => x.CMENTIM, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMONGO)&nbsp;@Html.TextBoxFor(x => x.CMONGO, new {@class = "form-control"})
+                        @Html.LabelFor(x => x.CMDOSFRQ)&nbsp;@Html.TextBoxFor(x => x.CMDOSFRQ, new {@class = "form-control"})
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary">Submit Form</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            }
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7_CDASH_Export", "HL7_CDASH_Export\HL7_CDASH_Export.csproj", "{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7_CDASH_Web", "HL7_CDASH_Web\HL7_CDASH_Web.csproj", "{B21D4423-1DAF-4FEF-8695-7E478B696D79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5} = {E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13B9583-0FB8-4AE9-BF75-47FAA2AD3FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21D4423-1DAF-4FEF-8695-7E478B696D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21D4423-1DAF-4FEF-8695-7E478B696D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21D4423-1DAF-4FEF-8695-7E478B696D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21D4423-1DAF-4FEF-8695-7E478B696D79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

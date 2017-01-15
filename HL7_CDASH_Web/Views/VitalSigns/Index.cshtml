@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Vital Signs";
+}
+
+@model HL7_CDASH_Web.Models.VitalSignsViewModels
+
+@using (Html.BeginForm("PostVitalSigns", "VitalSigns", FormMethod.Post))
+{
+    <div class="panel panel-primary" style="margin-top:5em;">
+        <div class="panel panel-heading">
+            <h3>@ViewBag.Title</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="row">
+                <div class="col-md-offset-1">
+                    @Html.DisplayFor(x => x.Results)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    @Html.LabelFor(x => x.VSPERF)&nbsp;@Html.TextBoxFor(x => x.VSPERF, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSDTC)&nbsp;@Html.TextBoxFor(x => x.VSDTC, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSDAT)&nbsp;@Html.TextBoxFor(x => x.VSDAT, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSTIN)&nbsp;@Html.TextBoxFor(x => x.VSTIN, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSSPID)&nbsp;@Html.TextBoxFor(x => x.VSSPID, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSORRES)&nbsp;@Html.TextBoxFor(x => x.VSORRES, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSORRESU)&nbsp;@Html.TextBoxFor(x => x.VSORRESU, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSVLSIG)&nbsp;@Html.TextBoxFor(x => x.VSVLSIG, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSLOC)&nbsp;@Html.TextBoxFor(x => x.VSLOC, new {@class = "form-control"})
+                    @Html.LabelFor(x => x.VSPOS)&nbsp;@Html.TextBoxFor(x => x.VSPOS, new {@class = "form-control"})
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary">Submit Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
